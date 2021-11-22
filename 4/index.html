@@ -22,12 +22,34 @@
             position: sticky;            
         }
         @media screen and (max-width: 600px) {
-        body {
-            background-color: olive;
-            color: white;
+            #navbar{
+            margin-right: 10px;
+            margin-left: 5px;
+            width: 30%;
+            height: 100vh;
        }
      }
+     a{
+         text-decoration: none;
+         color: black;
+         margin: 5px 0px;
+         font-size: 20px;
+         border-bottom: 2px solid;
+         background-color: rgb(241, 237, 229);
+         background-size: cover;
+         padding: 5px;
+         border-radius: 20px;
+     }
+    .code-box{
+        background-color: rgb(241, 237, 229);
+        min-height: 70px;
+        max-width: 70vw;
+        margin-left: 30px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 15px;
         
+    }
 
     </style>
 </head>
@@ -79,8 +101,12 @@
                 <h1>Hello world</h1>
            </header>
            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-           <code>function greetMe(yourName) { alert("Hello " + yourName); }</code> <br>
-           <code>greetMe("World");</code>
+           <div class="code-box">
+              <code>function greetMe(yourName) { alert("Hello " + yourName); }</code> <br>
+           </div>
+           <div class="code-box">
+              <code>greetMe("World");</code>
+            </div>
             <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
  
         </section>
@@ -99,13 +125,20 @@
           </header>
           <p>You can declare a variable in three ways:</p>
           <p>With the keyword var. For example,</p>
+          </div>
+          <div class="code-box">
           <code>var x = 42.</code>
+          </div>
           <p>This syntax can be used to declare both local and global variables.</p>
           <p>By simply assigning it a value. For example,</p>
+          <div class="code-box">
           <code>x = 42.</code>
+          </div>
           <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
           <p>With the keyword let. For example,</p>
+          <div class="code-box">
           <code>let y = 13.</code>
+          </div>
           <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
   
         </section>
