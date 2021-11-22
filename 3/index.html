@@ -1,35 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header id="header">
-        <div>
-         <img src="images.png" alt="" id="header-img">
-     </div>
-        <nav id="nav-bar">
-            <ul>
-              <li><a class="nav-link" href="#features">Features</a></li>
-              <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-              <li><a class="nav-link" href="#pricing">Pricing</a></li>
-            </ul>
-          </nav>
-          <iframe
-        id="video"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-      <form action="" id="form">
-        <label for="">Email <input type="email" id="email" placeholder="Enter your email"> </label>
-        <input type="submit" value="Submit" id="submit">
-      </form>
-    </header>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
     
-</body>
+            body{
+                padding: 0px;
+                margin: 0px;
+                position: relative;
+                word-wrap: normal;
+            }
+    header {
+      position: fixed;
+      top: 0;
+      height: 75px;
+      width: 100%;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(233, 224, 224, 0.514);
+      margin-bottom: 15px;
+       
+      
+    }
+    .sec{
+        display: flex;
+        height: auto;
+        margin-top: 10px;
+    }
+    #contact{
+        margin-bottom: 0px;
+        min-height: 75px;
+        background-color: rgba(233, 224, 224, 0.514);
+        
+    }
+    #navigation-bar{
+        height: 45px;
+        width: 100vw;
+    }
+    
+    #Features{
+       
+        margin-top: 75px;
+    }
+    li{
+        list-style: none;
+    }
+    ul{
+        display: flex;
+        justify-content: center;   
+        color:black; 
+    }
+    li{
+        padding-left: 10px ;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    #logo{
+        display: flex;
+        height: 75px;
+        width: 75px;
+        display: flex-start;
+        background: cover;
+    }
+    #header-img{
+         height: auto;
+         width: auto;
+    
+    }
+    
+    #product-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+    }
+    .product{
+        background-color: blanchedalmond;
+        padding: 5px;
+        margin: 20px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    @media (max-width: 800px) {
+      #product-box{
+        flex-direction: column;
+      }
+      
+    }
+    
+        </style>
+    </head>
+    <body>
+        
+        <header id="header">
+            <div id="logo">
+                <img src="images.png" alt="Logo" id="header-img">
+            </div>
+            <div id="navigation-items">
+                <nav id="nav-bar">
+                    <ul>
+                        <li> <a href="#Features" class="nav-link">Features</a></li>
+                        <li> <a href="#How-its-Works" class="nav-link">How its Works</a></li>
+                        <li> <a href="#contact" class="nav-link">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section  class="sec">
+            <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                <input type="email" id="email" placeholder="Enter your email" name="email">
+                <input type="submit" value="submit" id="submit">
+            </form>
+        </section>
+    
+        <section id="Features">
+            <div id="container">
+             <div class="feature">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+             </div>
+             <div class="feature">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+             </div>
+             <div class="feature">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+             </div>
+            </div>
+        </section>
+        <section id= "How-its-Works" class="sec">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" id="video">
+                <video src=""></video>
+            </iframe>
+        </section>
+        <section class="sec">
+            <div id="product-box">
+                <div class="product">
+                    <h1> Product2</h1>
+                    <h3>Price 500$</h3>
+                    <p>ExplanationExplanationExplanationExplanationExplanation</p>
+                </div> 
+                <div class="product">
+                    <h1> Product3</h1>
+                    <h3>Price 800$</h3>
+                    <p>ExplanationExplanationExplanationExplanationExplanation</p>
+                </div>
+                <div class="product">
+                    <h1> Product4</h1>
+                    <h3>Price 600$</h3>
+                    <p>ExplanationExplanationExplanationExplanationExplanation</p>
+                </div>       
+            </div>
+    
+        </section>
+    
+        <section id= "contact" class="sec">
+              <div id="footer" >
+                    <ul>
+                        <li>Terms</li>
+                        <li>Contact</li>
+                    </ul>
+              </div>
+    
+        </section>
+    </body>
+    
 </html>
