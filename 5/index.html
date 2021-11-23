@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        nav{
+            height:20vh;
+            width: 100vw;
+            position: fixed;
+            top: 0px;
+            background-color: chocolate;
+
+        }
+        #welcome-section{
+            height: 100vh;
+            width:  100vw;
+            background-color: olive;
+        }
+        @media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
+#projects{
+            height:100px;
+            width: 100vw;
+            background-color: darkblue;
+}
+#contact{
+            height:20vh;
+            width: 100vw;
+            background-color: chocolate;
+}
+
+    </style>
 </head>
 <body>
-    <h1>Project 5</h1>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="welcome-section">
+        <h1>I am Rasel</h1>
+
+    </section>
+    <section id="projects">
+        <div class="project-tile">
+                <h2>My projects</h2>
+        </div>
+        <a href="https://raselrzl.github.io/4/"></a>
+    </section>
+    <section id="contact">
+        <a href="https://www.freecodecamp.org/raselmiah" target="_blank" id="profile-link">Profile link</a>
+    </section>
 </body>
 </html>
