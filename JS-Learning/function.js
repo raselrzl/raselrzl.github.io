@@ -77,3 +77,29 @@ function processArg(num) {
 }
 processed=processArg(7);
 console.log(processed)
+
+
+// Stand in Line
+function nextInLine(arr, item) {
+    
+    arr.push(item);
+  
+    item=arr.shift();
+    return item;
+  }
+  const testArr = [1, 2, 3, 4, 5];
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
+
+
+  //true of false, if statement
+  function trueOrFalse(wasThatTrue) {
+     if(wasThatTrue){
+       return "Yes, that was true"
+     }
+       return "No, that was false"
+  
+  }
+  console.log(trueOrFalse(true))
+  console.log(trueOrFalse(false))
