@@ -30,6 +30,9 @@ li{
     align-items: center;
     
 }
+#information-box{
+    padding:20px;
+}
 button{
         background-color: rgb(182, 179, 179);
         border-radius: 50px;
