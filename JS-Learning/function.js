@@ -38,3 +38,21 @@ function fun2() {
 }
 fun1()
 fun2()
+
+//Local Scope and Functions
+function myLocalScope() {
+    let myVar=10;  
+    console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope();
+
+  //Global vs. Local Scope in Functions
+
+  const outerWear = "T-Shirt";
+  function myOutfit() {
+  const outerWear="sweater";
+  return outerWear;
+}
+myOutfit();
+console.log(myOutfit());
+  
