@@ -55,4 +55,25 @@ function myLocalScope() {
 }
 myOutfit();
 console.log(myOutfit());
+
+//Understanding Undefined Value returned from a Function
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+  return sum;
+}
+function addFive(){
+  sum=sum+5;
+}
+console.log(addThree());
+console.log(addFive());
   
+
+//Assignment with a Returned Value
+let processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed=processArg(7);
+console.log(processed)

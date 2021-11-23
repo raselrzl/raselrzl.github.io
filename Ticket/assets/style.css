@@ -55,3 +55,9 @@ button{
      min-width: 50vw;
      max-width: 90vw;
 }
+
+@media only screen and (min-width: 600px) {
+    #information-box {
+    max-width: 60vw;
+    }
+  }
