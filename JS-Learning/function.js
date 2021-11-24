@@ -103,3 +103,33 @@ function nextInLine(arr, item) {
   }
   console.log(trueOrFalse(true))
   console.log(trueOrFalse(false))
+
+
+  //Comparison with the Equality Operator
+
+function testEqual(val) {
+    if (val==12) { 
+      return "Equal";
+    }
+    return "Not Equal";
+  } 
+  console.log(testEqual(10))
+
+//Comparison with the Strict Equality Operator
+function testStrict(val) {
+    if (val===7) {
+      return "Equal";
+    }
+    return "Not Equal";
+  }  
+  console.log(testStrict(7));
+
+  //Comparison with the Inequality Operator
+function testNotEqual(val) {
+    if (val != 99) { 
+      return "Not Equal";
+    }
+    return "Equal";
+  }
+  
+  testNotEqual(10);
