@@ -129,7 +129,140 @@ function testNotEqual(val) {
     if (val != 99) { 
       return "Not Equal";
     }
-    return "Equal";
+    return "Equal"; 
+} 
+  testNotEqual(10);
+
+  //Comparisons with the Logical And Operator
+  function testLogicalAnd(val) {  
+    if (val<=50 && val>=25) {      
+        return "Yes";
+    }
+    return "No";
+  }
+  console.log(testLogicalAnd(10));
+
+  //Comparisons with the Logical Or Operator
+  function testLogicalOr(val) {
+    if (val<10||val>20) {
+      return "Outside";
+    }
+     return "Inside";
+  }
+  console.log(testLogicalOr(25));
+
+  //Introducing Else Statements
+  function testElse(val) {
+    let result = "";
+    if (val > 5) {
+      result = "Bigger than 5";
+    } 
+    else {
+      result = "5 or Smaller";
+    }
+    return result;
+  }  
+  console.log(testElse(4));
+
+  //Introducing Else If Statements
+  function testElseIf(val) {
+    if (val > 10) {
+      return "Greater than 10";
+    }  
+    else if (val <= 5) {
+      return "Smaller than 56";
+    }
+    else if (val <= 5) {
+        return "Smaller than 5";
+      }
+   else{
+    return "Between 5 and 10";
+  }
   }
   
-  testNotEqual(10);
+  console.log(testElseIf(5));
+
+
+//Golf Code
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+if (strokes==1){
+  return "Hole-in-one!";
+}
+else if(strokes<= par-2	){
+  return "Eagle";
+}
+else if(strokes==par - 1){
+  return "Birdie";
+}
+else if(strokes==par){
+  return "Par";
+}
+else if(strokes==par+1){
+  return "Bogey";
+}
+else if(strokes==par + 2){
+  return "Double Bogey";
+}
+else if(strokes>=par + 3){
+  return "Go Home!";
+}
+
+else{
+  return "Change Me";
+}
+}
+
+console.log(golfScore(5, 4));
+
+
+
+//Selecting from Many Options with Switch Statements
+
+function caseInSwitch(val) {
+    let answer = "";
+    switch(val){
+  case 1:
+  return "alpha";
+  break;
+  case 2:
+  return "beta";
+  break;
+  case 3:
+  return "gamma";
+  break;
+  case 4:
+  return "delta";
+  break;
+    return answer;
+  }
+  }
+  
+  caseInSwitch(1);
+
+
+  //Adding a Default Option in Switch Statements
+
+  function switchOfStuff(val) {
+    let answer = "";
+  switch(val){
+    case "a":
+    return "apple"
+    break;
+    case "b":
+    return "bird";
+    break;
+    case "c":
+    return "cat";
+    break;
+    default:
+    return "stuff";
+    break
+  }
+  
+    return answer;
+  }
+  
+  switchOfStuff(1);
