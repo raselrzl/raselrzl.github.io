@@ -17,7 +17,7 @@
             width: 100vw;
             position: fixed;
             top: 0px;
-            background-color: black;
+            background-color: rgb(10, 10, 10);
          }
          #navbar{
              display: flex;
@@ -31,17 +31,15 @@
              text-decoration: none;
              color: #fff;
          }
-         #navbar #logo{
-             height: 20px;
-             flex-grow:1;
-             align-self:center;
-         }
-        /* ------Nav Section----end----- */
+                /* ------Nav Section----end----- */
 
         #welcome-section{
             height: 100vh;
             width:  100vw;
-            background-color: olive;
+            background-image: url(portfolioimg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;        
         }
         @media screen and (max-width: 600px) {
   body {
@@ -63,7 +61,7 @@
 </head>
 <body>
     <nav id="navbar">
-        <img src="img-logo.jfif" alt="" id="logo">
+        
         <a href="#welcome-section">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Work</a>
