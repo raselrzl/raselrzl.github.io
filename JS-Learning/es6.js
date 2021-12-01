@@ -165,3 +165,25 @@ const bicycle = {
   };
   bicycle.setGear(3);
   console.log(bicycle.gear);
+
+
+  //Use class Syntax to Define a Constructor Function
+class Vegetable{
+    constructor(name){
+      this.name=name;
+    }
+  }
+ 
+  const carrot = new Vegetable('carrot');
+  console.log(carrot.name);
+
+
+
+  class SpaceShuttle {
+    constructor(targetPlanet) {
+      this.targetPlanet = targetPlanet;
+    }
+  }
+  const zeus = new SpaceShuttle('Jupiter');
+
+  console.log(zeus);
