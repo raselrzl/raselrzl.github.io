@@ -187,3 +187,81 @@ class Vegetable{
   const zeus = new SpaceShuttle('Jupiter');
 
   console.log(zeus);
+
+
+
+  //import export module
+
+  import * as myMathModule from "./math_functions.js";
+
+  import { add } from './math_functions.js';
+
+  import { add, subtract } from './math_functions.js';
+
+  export const add = (x, y) => {
+    return x + y;
+  }
+
+
+  const add = (x, y) => {
+    return x + y;
+  }
+  
+  export { add };
+
+
+  export { add, subtract };
+
+
+  //Complete a Promise with resolve and rejectPassed
+
+  const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer represents a response from a server
+    let responseFromServer;
+      
+    if(responseFromServer) {
+      resolve("We got the data");
+    } else {  
+      reject("Data not received");
+    }
+  });
+
+
+
+
+
+
+  //Handle a Fulfilled Promise with then
+  const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer is set to true to represent a successful response from a server
+    let responseFromServer = true;
+      
+    if(responseFromServer) {
+      resolve("We got the data");
+    } else {  
+      reject("Data not received");
+    }
+  });
+  makeServerRequest.then(result => {
+    console.log(result);
+  });
+
+
+  //Handle a Rejected Promise with catch
+  const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer is set to false to represent an unsuccessful response from a server
+    let responseFromServer = false;
+      
+    if(responseFromServer) {
+      resolve("We got the data");
+    } else {  
+      reject("Data not received");
+    }
+  });
+  
+  makeServerRequest.then(result => {
+    console.log(result);
+  });
+  makeServerRequest.catch(error => {
+    console.log(error);
+  });
