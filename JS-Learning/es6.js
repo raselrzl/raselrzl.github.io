@@ -90,3 +90,78 @@ const HIGH_TEMPERATURES = {
   };  
   const{today:{low:lowToday,high:highToday}}= LOCAL_FORECAST;
   console.log(lowToday)
+
+  //Use Destructuring Assignment to Assign Variables from Arrays
+
+//swaping
+
+let a = 8, b = 6;
+[b,a]=[a,b];
+console.log(a)
+
+
+//Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  const [,,...arr] = list;
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr)
+
+
+
+//Use Destructuring Assignment to Pass an Object as a Function's Parameters
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+  };
+  const half = ({max,min}) => (max + min) / 2.0;   
+  console.log(half(stats))
+
+
+  //Create Strings using Template Literals
+  const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["no-extra-semi", "no-dup-keys"]
+  };
+  function makeList(arr) {
+    const failureItems = [];
+    for (let i = 0; i < arr.length; i++) {
+      failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+    }  
+    return failureItems;
+  }
+  
+  const failuresList = makeList(result.failure);
+
+
+  //Write Concise Object Literal Declarations Using Object Property Shorthand
+
+  const createPerson = (name, age, gender) => {
+    return {
+      name: name,
+      age: age,
+      gender: gender
+    };
+  };
+  
+  const createPerson = (name, age, gender) => {
+    return ({name, age, gender});
+  };
+
+  //Write Concise Declarative Functions with ES6
+  
+const bicycle = {
+    gear: 2,
+    setGear/*:function*/(newGear) {
+      this.gear = newGear;
+    }
+  };
+  bicycle.setGear(3);
+  console.log(bicycle.gear);
