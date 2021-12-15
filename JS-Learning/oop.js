@@ -343,5 +343,3 @@ Car.prototype.display=function() { console.log(this.name, this.color); };
 Car.prototype.constructor = Car;
 
 let volvo= new Car("v","white")
-
-
