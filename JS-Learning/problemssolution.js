@@ -334,3 +334,42 @@ function myReplace(str, before, after){
           }
           
           console.log(convertToRoman(3999));
+
+
+          ////////////////////////
+          function rot13(str) {
+            const afterShifting13Obj = {
+              'N': "A",
+              'O': 'B',
+              'P': 'C',
+              'Q': 'D',
+              'R': 'E',
+              'S': 'F',
+              'T': 'G',
+              'U': 'H',
+              'V': 'I',
+              'W': 'J',
+              'X': 'K',
+              'Y': 'L',
+              'Z': 'M',
+              'A': 'N',
+              'B': 'O',
+              'C': 'P',
+              'D': 'Q',
+              'E': 'R',
+              'F': 'S',
+              'G': 'T',
+              'H': 'U',
+              'I': 'V',
+              'J': 'W',
+              'K': 'X',
+              'L': 'Y',
+              'M': 'Z'
+            }
+            const splitedStr = str.split(' ').map(string => {
+              return string.split('').map(string => afterShifting13Obj[string] === undefined ? string : afterShifting13Obj[string]).join('');
+            }).join(' ');
+              return splitedStr;
+            }
+            
+            console.log(rot13("SERR PBQR PNZC"))
