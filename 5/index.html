@@ -47,14 +47,34 @@
   }
 }
 #projects{
-            height:100px;
+            height:200px;
             width: 100vw;
             background-color: darkblue;
+            display: flex;
+             flex-direction: row;
+             flex-wrap: nowrap;
+             justify-content: center;
+             align-items: center;
+             align-content: flex-start;
+
 }
+  
 #contact{
             height:20vh;
             width: 100vw;
             background-color: chocolate;
+           
+}
+#contact-link{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: nowrap;
+             justify-content: center;
+             align-items: center;
+             
+}
+#contact-link a{
+    align-self: flex-end;
 }
 
     </style>
@@ -79,6 +99,9 @@
     <section id="projects">
         <div class="project-tile">
                 <h2>My projects</h2>
+                <div class="pro"><h1>Ticket</h1></div>
+                <div class="pro"><h1>E-Commerse</h1></div>
+                <div class="pro"><h1>Personal Profile</h1></div>
         </div>
         <a href="https://raselrzl.github.io/4/"></a>
     </section>
@@ -86,7 +109,9 @@
 
     </section>
     <section id="contact">
-        <a href="https://www.freecodecamp.org/raselmiah" target="_blank" id="profile-link">Profile link</a>
+        <div id="contact-link">
+          <a href="https://www.freecodecamp.org/raselmiah" target="_blank" id="profile-link">Profile link</a>
+       </div>
     </section>
 </body>
 </html>
