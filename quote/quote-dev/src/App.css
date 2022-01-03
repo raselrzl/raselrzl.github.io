@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#body{
+  background-color: #32504b;
+  font-weight: 400;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+#body2{
+  background-color: #040706;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#quote-box{
+  color: #32504b;
+  padding: 10px;
+  height: 300px;
+  width:500px;
+  background-color: #efe9f3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 0px #289FED, 
+              6px 6px 0px 0px #5FB8FF, 
+              9px 9px 0px 0px #A1D8FF, 
+              12px 12px 0px 0px #CAE6FF, 
+              15px 15px 0px 0px #E1EEFF, 
+              1px 1px 6px 13px rgba(0,0,0,0);
+}
+#box-color{
+  background-color: red;
+  color: #32504b;
+  padding: 10px;
+  height: 300px;
+  width:500px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 0px #289FED, 
+              6px 6px 0px 0px #5FB8FF, 
+              9px 9px 0px 0px #A1D8FF, 
+              12px 12px 0px 0px #CAE6FF, 
+              15px 15px 0px 0px #E1EEFF, 
+              1px 1px 6px 13px rgba(0,0,0,0);
+}
+
+
+
+.buttons{
+    width: auto;
+    margin: auto;   
+}
+#new-quote{
+      height: 38px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #32504b;
+      outline: none;
+      font-size: 0.85em;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      box-shadow: 3px 3px 0px 0px #289FED, 
+              6px 6px 0px 0px #5FB8FF, 
+              9px 9px 0px 0px #A1D8FF, 
+              12px 12px 0px 0px #CAE6FF, 
+              15px 15px 0px 0px #E1EEFF, 
+              1px 1px 6px 13px rgba(0,0,0,0);
+     
+}
+
+#new-quote:hover{
+              box-shadow: 5px 5px 5px 0px #000000, 
+                  inset 4px 4px 15px 0px #000000, 
+                  1px 1px 6px 13px rgba(0,0,0,0);
+}
+
+.logo{
+        float: left;
+        padding-top: 8px;
+        padding-left: 15px;
+        text-align: center;
+        font-size: 40px;    
+        cursor: pointer; 
+         
+}
+
+.logo i:hover{  
+  color: #289FED; 
+}
+
+.flex-container{
+  display: flex;
+}
+#author{
+  text-align: center; 
 }

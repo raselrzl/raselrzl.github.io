@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Quote from './component/quote';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Quote Matchine</h1>
+    <div>
+        <Quote /> 
     </div>
   );
 }
