@@ -19,7 +19,7 @@
 #quote-box{
   color: #32504b;
   padding: 10px;
-  height: 300px;
+  height: auto;
   width:500px;
   background-color: #efe9f3;
   border-radius: 10px;
@@ -49,7 +49,7 @@
 
 .buttons{
     width: auto;
-    margin: auto;   
+    margin: auto;  
 }
 #new-quote{
       height: 38px;
