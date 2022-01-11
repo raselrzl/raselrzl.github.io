@@ -22,16 +22,25 @@ Body{
   font-size: 16px;
   padding-left: 30px;
 
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: flex-end;
  
 }
 #editor-header p{
   padding: 0px;
   margin: 0px;
 }
+
+#editor-header p i{
+  padding-right: 10px;
+  cursor: pointer;
+  
+}
+
 
 
 #editor{
@@ -60,14 +69,21 @@ Body{
   font-size: 16px;
   padding-left: 30px;
   
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: flex-end;
 }
 #previewer-header p{
   padding: 0px;
   margin: 0px;
+}
+
+#previewer-header p i{
+  padding-right: 10px;
+  cursor: pointer;
 }
 
 
