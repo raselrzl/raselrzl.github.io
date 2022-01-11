@@ -21,7 +21,16 @@ Body{
   background-color: #277c21;
   font-size: 16px;
   padding-left: 30px;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
  
+}
+#editor-header p{
+  padding: 0px;
+  margin: 0px;
 }
 
 
@@ -50,7 +59,18 @@ Body{
   background-color: #277c21;
   font-size: 16px;
   padding-left: 30px;
+  
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
+#previewer-header p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
 #preview{  
   height:auto;
   min-height: 200px;
