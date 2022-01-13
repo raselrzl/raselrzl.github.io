@@ -21,7 +21,8 @@ Body{
   background-color: #277c21;
   font-size: 16px;
   padding-left: 30px;
-
+ 
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -30,16 +31,25 @@ Body{
   align-content: flex-end;
  
 }
-#editor-header p{
+#editor-header p,
+#previewer-header p{
   padding: 0px;
   margin: 0px;
+  font-weight: 900;
+  color:white;
 }
 
-#editor-header p i{
+#editor-header p i,
+#previewer-header p i{
   padding-right: 10px;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
+
+#editor-header p i:hover,
+#previewer-header p i:hover{
+  color:black; 
+}
+
 
 
 
@@ -68,6 +78,7 @@ Body{
   background-color: #277c21;
   font-size: 16px;
   padding-left: 30px;
+   
   
   display: flex;
   flex-direction: row;
@@ -76,17 +87,6 @@ Body{
   align-items: flex-start;
   align-content: flex-end;
 }
-#previewer-header p{
-  padding: 0px;
-  margin: 0px;
-}
-
-#previewer-header p i{
-  padding-right: 10px;
-  cursor: pointer;
-}
-
-
 #preview{  
   height:auto;
   min-height: 200px;
@@ -95,6 +95,28 @@ Body{
   box-sizing: border-box;
   border: 3px solid #ccc;
   background-color: #faf8f5;
-  font-size: 20px;
-  outline:none;  
+  outline:none;
+  
+  
+}
+img {
+  display: block;
+  max-width: 60%;
+  margin: 2rem auto;
+}
+
+code{
+  background: rgb(212, 205, 205);
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #336d3c;
+}
+blockquote {
+  border-left: 3px solid #224b4b;
+  color: #09d3d3;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+a{
+  color:khaki;
 }
