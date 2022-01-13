@@ -4,7 +4,7 @@ import Markdown from 'react-markdown';
 function MarkdownPreviewer() {
     const [inputData, setInputData]=useState()
 
-    const placeholder = `# Welcome to my React Markdown Previewer!
+    const placeholder = `# Thank You for using my Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:
@@ -26,14 +26,14 @@ Or _italic_.
 Or... wait for it... **_both!_**  
 And feel free to go crazy.
 
-There's also [links](https://www.freecodecamp.org), and
+There's also a link for [Quote Matchine](https://raselrzl.github.io/quote/), and  
 > Block Quotes!
 
 
 
 - And of course there are lists.
   - Some are bulleted.
-  - Some are same
+  - This is the same
      - With different indentation levels.
         - That look like this.
 
