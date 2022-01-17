@@ -1,14 +1,32 @@
-import { useParams } from 'react-router-dom';
-import React from 'react'
-import axios from 'axios';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default function Post() {
-    let { id }=useParams();
+class Post extends Component {
+  render() {
 
-return (
-        <div className='container'>
-        <h4> {id} </h4>        
-    </div>
+    const post = this.props.post ? (
+      <div className="post">
+        <h4 className="center">{this.props.post.title}</h4>
+        <p>{this.props.post.body}</p>
+      </div>
+    ) : (
+      <div className="center">Loading post...</div>
+    );
+
+    return (
+      <div className="container">
+        {post}
+      </div>
     )
+  }
 }
 
+const mapStateToProps = (state, ownProps) => {
+  let id = ownProps.match.params.id;
+  console.log(id)
+  return {
+    post: state.posts.find(post => post.id === id)
+  }
+}
+
+export default connect(mapStateToProps)(Post)
