@@ -6,9 +6,9 @@ export default function ProtectedPage() {
   return (
     <Layout>
       <Heading>
-        Protected page
+        here it will show
         <Badge colorScheme='green' fontSize='lg' mx={4}>
-          Protected Page
+          ticket/ qr code
         </Badge>
       </Heading>
       <Container maxW='container.lg' overflowX='auto' py={4}></Container>

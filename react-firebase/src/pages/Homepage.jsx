@@ -6,13 +6,24 @@ export default function Homepage() {
    return (
     <Layout>  
       <Heading>
-        Firebase Authentication bye
+        Firebase Authentication by
         <chakra.span
           fontWeight='black'
           fontSize='5xl'
           mx={2}
         >
-         Abba Rasel
+         Rasel
+        </chakra.span>
+        
+      </Heading>
+      <Heading>
+         <chakra.span
+          fontWeight='black'
+          fontSize='5xl'
+          mx={2}
+          
+        >
+         Learn Soo far
         </chakra.span>
         
       </Heading>
@@ -28,17 +39,7 @@ export default function Homepage() {
         <ListItem>Loading indicators while sign-in/up</ListItem>
         <ListItem> Dark Mode enabled template using Chakra UI </ListItem>
       </OrderedList>
-      <Heading>
-         <chakra.span
-          fontWeight='black'
-          fontSize='5xl'
-          mx={2}
-          
-        >
-         Learn Soo far
-        </chakra.span>
-        
-      </Heading>
+     
             
     </Layout>
   )

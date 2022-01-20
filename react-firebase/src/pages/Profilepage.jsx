@@ -8,9 +8,9 @@ export default function Profilepage() {
   return (
     <Layout>
       <Heading>
-        Profile page
+        Here it will show
         <Badge colorScheme='green' fontSize='lg' mx={4}>
-          Protected Page
+          Profile info
         </Badge>
       </Heading>
 
