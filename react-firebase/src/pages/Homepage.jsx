@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout'
 
 export default function Homepage() {
    return (
-    <Layout>  
+    <Layout >  
       <Heading>
         Firebase Authentication by
         <chakra.span
