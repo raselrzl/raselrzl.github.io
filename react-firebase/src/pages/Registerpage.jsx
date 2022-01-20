@@ -44,7 +44,7 @@ export default function Registerpage() {
                 status:'error',
                 duration:5000,
                 isCloseable:true
-              })}). finally(()=>mounted.current && setIsSubmitting(false))
+              })}). finally(()=> mounted.current && setIsSubmitting(false))
           }}
         >
           <Stack spacing='6'>

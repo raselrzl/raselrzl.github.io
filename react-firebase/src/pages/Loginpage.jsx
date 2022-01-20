@@ -16,8 +16,8 @@ export default function Loginpage() {
   const toast=useToast()
 
   const { login, SignInWithGoogle }=useAuth()
-
- const mounted=useMounted()
+  const mounted=useMounted()
+  
   
 
   return (
@@ -49,7 +49,7 @@ export default function Loginpage() {
                 duration:5000,
                 isCloseable:true
               })
-            }). finally(()=>mounted.current && setIsSubmitting(false))
+            }). finally(()=> mounted.current && setIsSubmitting(false))
           }}
         >
           <Stack spacing='6'>

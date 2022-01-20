@@ -1,6 +1,4 @@
-import React from 'react';
-import { useRef } from 'react/cjs/react.development';
-import { useEffect } from 'react/cjs/react.production.min';
+import React, { useRef, useEffect} from 'react';
 
 export default function useMounted() {
 
