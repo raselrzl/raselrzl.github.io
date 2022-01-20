@@ -2,6 +2,7 @@ import {  Button,  chakra,  FormControl,  FormLabel,  Heading,  HStack,  Input, 
 import React, { useEffect, useRef, useState } from 'react'
 import { FaGoogle } from 'react-icons/fa'
 import { Link, useHistory } from 'react-router-dom'
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min'
 import { Card } from '../components/Card'
 import DividerWithText from '../components/DividerWithText'
 import { Layout } from '../components/Layout'
@@ -10,6 +11,9 @@ import useMounted from '../Hooks/useMounted'
 
 export default function Loginpage() {
   const history = useHistory()
+  const location=useLocation()
+  console.log(location)
+
   const [email, setEmail]=useState('')
   const [password, setPassword]=useState('')
   const [isSubmitting, setIsSubmitting]=useState(false)
@@ -40,7 +44,7 @@ export default function Loginpage() {
             setIsSubmitting(true)
             login(email, password)
             .then((response)=> {
-              history.push('/profile')
+              history.push(location.state?.from ?? '/profile')
               console.log(response)})
             .catch((error)=>{console.log(error.message)
             toast({
