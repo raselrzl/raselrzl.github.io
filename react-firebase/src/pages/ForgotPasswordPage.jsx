@@ -1,22 +1,16 @@
-import {
-  Button,
-  Center,
-  chakra,
-  FormControl,
-  FormLabel,
-  Heading,
-  Input,
-  Stack,
-  useToast,
-} from '@chakra-ui/react'
+import {  Button,  Center,  chakra,  FormControl,  FormLabel,  Heading,  Input,  Stack,  useToast} from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Card } from '../components/Card'
 import DividerWithText from '../components/DividerWithText'
 import { Layout } from '../components/Layout'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function ForgotPasswordPage() {
   const history = useHistory()
+  const [email, setEmail]=useState('')
+  const {forgotPassword}=useAuth()
+  const toast=useToast()
 
   return (
     <Layout>
@@ -28,12 +22,29 @@ export default function ForgotPasswordPage() {
           onSubmit={async e => {
             e.preventDefault()
             // your forgot password logic here
+            forgotPassword(email)
+            .then(response=>{
+              console.log(response)
+              toast({
+                description: 'Email sent, check your email.',
+                status:'success',
+                duration:5000,
+                isCloseable:true
+              })
+            }) 
+            .catch(e=>{console.log(e.message)})
+            toast({
+                description: e.message,
+                status:'error',
+                duration:5000,
+                isCloseable:true
+              })
           }}
         >
           <Stack spacing='6'>
             <FormControl id='email'>
               <FormLabel>Email address</FormLabel>
-              <Input name='email' type='email' autoComplete='email' required />
+              <Input value={email} onChange={e=>setEmail(e.target.value)} name='email' type='email' autoComplete='email' required />
             </FormControl>
             <Button type='submit' colorScheme='primary' size='lg' fontSize='md'>
               Submit

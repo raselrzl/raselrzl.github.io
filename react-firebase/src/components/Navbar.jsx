@@ -18,10 +18,10 @@ export function Navbar() {
     <Box
       borderBottom='2px'
       borderBottomColor={useColorModeValue('gray.100', 'gray.700')}
-      mb={4}
+      mb={8} 
     >
       <HStack py={4} justifyContent='flex-end' maxW='container.lg' mx='auto'>
-        <Navlink to='/' name='Firbase Authentication' size='lg' />
+        <Navlink to='/' name='Home Page' size='lg' ml={20} p={5} />
         <Spacer />
         {!currentUser && <Navlink to='/login' name='Login' />}
         {!currentUser && <Navlink to='/register' name='Register' />}
@@ -39,6 +39,7 @@ export function Navbar() {
         />}
         
         <IconButton
+          
           variant='outline'
           icon={useColorModeValue(<FaSun />, <FaMoon />)}
           onClick={toggleColorMode}
