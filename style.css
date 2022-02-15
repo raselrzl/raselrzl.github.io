@@ -52,7 +52,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -211,7 +211,7 @@ section .title::after{
 
 /* about section */
 .about .title::after{
-    content: "Who I Am";
+    content: "What I Am Looking For";
 }
 .about .about-content .left{
     width: 45%;
@@ -358,21 +358,25 @@ section .title::after{
     top: 0;
     background:green;
 }
-.skills-content .right .html::before{
+.skills-content .right .html-css-sass::before{
     width: 90%;
 }
-.skills-content .right .css::before{
-    width: 70%;
+.skills-content .right .node::before{
+    width: 60%;
 }
 .skills-content .right .js::before{
-    width: 60%;
-}
-.skills-content .right .python::before{
     width: 80%;
 }
-.skills-content .right .django::before{
-    width: 60%;
+.skills-content .right .python::before{
+    width: 85%;
 }
+.skills-content .right .django::before{
+    width: 55%;
+}
+.skills-content .right .react-firebase::before{
+    width: 85%;
+}
+
 
 /* teams section */
 .teams .title::after{
